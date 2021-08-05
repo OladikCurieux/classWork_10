@@ -157,15 +157,20 @@ input:focus{
    position: relative;
 }
 
-.form-box::before{
-   content: "";
+.forn-box__button{
    display: block;
    position: absolute;
    width: 41px;
    height: 41px;
    background: url("../i/sprite.png") no-repeat 0 -347px;
    left: -50px;
+   top: 15px;
+   border: 0;
+
+   cursor: pointer;
+
 }
+
 
 .forn-box__control{
    width: 220px;
