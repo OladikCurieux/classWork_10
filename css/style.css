@@ -15,6 +15,7 @@ html {
 
 body {
    font-family: 'Ubuntu', sans-serif;
+   background: #f2f2f2 url("../i/bg.jpg") repeat-x;
    font-size: 1rem;
 
 }
@@ -39,7 +40,94 @@ body {
    display: table;
 }
 
+input{
+   background: transparent;
+   border: 0;
+}
+
+input:focus{
+   outline: none;
+}
+
+.fluid-box__img{
+   width: 100%;
+   max-width: 100%;
+
+}
 /* ------------ header ---------  */
+
+.haeder-box__title{
+   background: url("../i/sprite.png") no-repeat 0 -388px; 
+   width: 161px;
+   height: 63px;
+   text-indent: -9999px;
+   margin: 0;
+   margin-left: 30px;
+   float: left;
+}
+
+
+/* ------------ nav ---------  */
+
+.nav{
+   float: left;
+}
+
+.nav-box{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-left: 100px;
+   padding-top: 16px;
+
+   display: flex;
+
+}
+
+.nav-box__item{
+   margin-right: 65px;
+   position: relative;
+}
+
+.nav-box__item:last-of-type{
+   margin-right: 0;
+}
+
+.nav-box__item::before{
+   content: "";
+   display: block;
+   background-image: url("../i/sprite.png");
+   background-repeat: no-repeat;
+   position: absolute;
+   width: 35px;
+
+}
+
+.nav-box__item_home::before{
+   width: 30px;
+   height: 34px;
+   right: 65px;
+
+}
+
+.nav-box__item_photo::before{
+   width: 35px;
+   height: 35px;
+   background-position: 0 -35px;
+   right: 47px;
+
+}
+
+.nav-box__item_contact::before{
+   width: 30px;
+   height: 34px;
+   background-position: 0 -71px;
+   right: 78px;
+   top: 5px;
+
+}
+
+/* ------------ form ---------  */
 
 
 
