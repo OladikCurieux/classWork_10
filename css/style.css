@@ -151,6 +151,37 @@ input:focus{
 }
 /* ------------ form ---------  */
 
+.form-box{
+   float: right;
+   padding-top: 8px;
+   position: relative;
+}
+
+.form-box::before{
+   content: "";
+   display: block;
+   position: absolute;
+   width: 41px;
+   height: 41px;
+   background: url("../i/sprite.png") no-repeat 0 -347px;
+   left: -50px;
+}
+
+.forn-box__control{
+   width: 220px;
+   padding: 4px;
+   border: 1px solid #cbcbcb;
+   background: #696969;
+   color: #fff;
+}
+
+.forn-box__control:focus{
+   border: 1px solid #696969;
+   background: #cbcbcb;
+   color: #000;
+}
+
+
 
 
 /* ------------ layout ---------  */
