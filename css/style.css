@@ -87,6 +87,7 @@ input:focus{
 .nav-box__item{
    margin-right: 65px;
    position: relative;
+   cursor: pointer;
 }
 
 .nav-box__item:last-of-type{
@@ -106,7 +107,11 @@ input:focus{
 .nav-box__item_home::before{
    width: 30px;
    height: 34px;
-   right: 65px;
+   right: 87px;
+
+}
+.nav-box__item_home:hover::before{
+   background-position: 0 -105px;
 
 }
 
@@ -114,19 +119,36 @@ input:focus{
    width: 35px;
    height: 35px;
    background-position: 0 -35px;
-   right: 47px;
+   right: 62px;
 
+}
+
+.nav-box__item_photo:hover::before{
+   background-position: 0 -140px;
 }
 
 .nav-box__item_contact::before{
    width: 30px;
    height: 34px;
    background-position: 0 -71px;
-   right: 78px;
+   right: 105px ;
    top: 5px;
 
 }
+.nav-box__item_contact:hover::before{
+   background-position: 0 -176 px;
+}
 
+.nav-box__link{
+   color: #cbcbcb;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 1.125rem;
+}
+
+.nav-box__item:hover .nav-box__link{
+   color: #6f6f6f;
+}
 /* ------------ form ---------  */
 
 
