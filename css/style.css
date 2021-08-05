@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap');
 
+/* ------------ general ---------  */
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -12,17 +14,51 @@ html {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1rem;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 1rem;
+
 }
 
-html,
-.body,
-.container {
-  height: 100%;
+.container{
+   width: 100%;
+   max-width: 960px;
+   min-height: 100vh;
+   margin: auto;
+
+   display: flex;
+   flex-direction: column;
 }
+
+.context-box{
+   flex: 1;
+}
+
+.clearfix::after{
+   content: "";
+   clear: both;
+   display: table;
+}
+
+/* ------------ header ---------  */
+
+
+
+/* ------------ layout ---------  */
+
+
+
+/* ------------ col left ---------  */
+
+
+
+
+/* ------------ col rigth ---------  */
+
+
+
+
+/* ------------ footer ---------  */
 
 .footer-box {
-  padding: 60px 0;
-  background: rgb(148, 255, 40);
+
 }
