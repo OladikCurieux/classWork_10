@@ -5,6 +5,7 @@
 :root{
    --bg-meta: #9c2323;
    --text-color: #7e7e7e;
+   --main-bg: #ededed;
 }
 
 html {
@@ -241,7 +242,7 @@ input:focus{
 /* ------------ post ---------  */
 
 .post{
-   background: #ededed;
+   background: var(--main-bg);
    border: 2px solid #fff;
 
    margin-bottom: 30px;
@@ -325,7 +326,83 @@ input:focus{
    border-radius: 6px;
 }
 
-/* ------------ col rigth ---------  */
+/* ------------ rigth box ---------  */
+
+.rigth-box{
+   background: var(--main-bg);
+   border: 2px solid #fff;
+
+   margin-bottom: 30px;
+   padding: 10px;
+}
+
+.rigth-box__title{
+   margin: 0;
+   color: #fff;
+   background-color: var(--bg-meta);
+
+   font-size: 1rem;
+
+   padding: 5px;
+   padding-left: 20px;
+   margin-bottom: 7px;
+}
+
+.slick_wrap{
+width: 300px;
+}
+
+.rigth-box__nav{
+   display: flex;
+   align-items: center;
+   padding-top: 1rem;
+}
+
+
+.rigth-box__link{
+   display: inline-block;
+   position: relative;
+   color: #000;
+   text-decoration: none;
+   padding-left: 30px;
+}
+
+.rigth-box__link::before{
+   content: "";
+   display: block;
+   width: 20px;
+   height: 21px;
+   background: url("../i/sprite.png") no-repeat 0 -279px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+
+.box-arrow{
+   margin-left: auto;
+}
+
+.box-arrow__item{
+   display: inline-block;
+   width: 26px;
+   height: 18px;
+   background: url("../i/sprite.png") no-repeat;
+   text-indent: -9999px;
+   cursor: pointer;
+}
+
+.box-arrow__item_left{
+   background-position: 0px -253px;
+   margin-right: 1rem;
+}
+.box-arrow__item_rigth{
+   background-position: -27px -253px;
+   
+
+}
+
+/* ------------ rigth box 2 ---------  */
 
 
 
@@ -333,5 +410,8 @@ input:focus{
 /* ------------ footer ---------  */
 
 .footer-box {
+  
 
 }
+
+

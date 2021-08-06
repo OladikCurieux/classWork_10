@@ -6,7 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
    <div class="container">
@@ -78,11 +80,43 @@
                
 
             </div> <!-- /.col_left -->
-            <div class="col col_rigth">
 
+            <div class="col col_rigth">
+               <article class="rigth-box">
+                  <h2 class="rigth-box__title">Random photo</h2>
+                  <div class="slick_wrap">
+                     <div class="slider" id="slider">
+                        <img src="img/slide1.jpg">
+                        <img src="img/slide2.jpg">
+                        <img src="img/slide3.jpg">
+                        <img src="img/slide4.jpg">
+                     </div>
+                  </div> <!-- /.slick_wrap -->
+                  <div class="rigth-box__nav">
+                     <a class="rigth-box__link" href="#">Check album</a>
+                     <div class="box-arrow">
+                        <spn class="box-arrow__item box-arrow__item_left">prev</spn>
+                        <spn class="box-arrow__item box-arrow__item_rigth">next</spn>
+                     </div>
+                  </div>
+               </article> <!-- /.rigth-box -->
             </div> <!-- /.col_rigth -->
+
          </div> <!-- /.context-box -->
+
       <footer class="footer-box"></footer>
    </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/slick.min.js"></script>
+   <script>
+      $("#slider").slick({
+         arrows: false,
+         infitine: true,
+         autoplay: true,
+         fade: true
+      });
+   </script>
+
 </body>
 </html>
