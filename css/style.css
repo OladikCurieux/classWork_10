@@ -198,7 +198,8 @@ input:focus{
 
    margin: 0;
    padding-right: 20px;
-   
+   padding-bottom: 40px;
+
    text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff;
    position: relative;
 }
@@ -276,6 +277,13 @@ input:focus{
    line-height: 32px;
 }
 
+.post__title{
+   margin-top: 0;
+   margin-bottom: 8px;
+
+   position: relative;
+   top: -3px;
+}
 
 
 /* ------------ col rigth ---------  */
