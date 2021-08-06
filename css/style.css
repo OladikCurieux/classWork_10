@@ -193,9 +193,12 @@ input:focus{
    font-size: 2.25rem;
    font-weight: 500;
    text-align: right;
+
    color: #a9a9a9;
+
    margin: 0;
-   padding-right: 12px;
+   padding-right: 20px;
+   
    text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff;
    position: relative;
 }
@@ -204,20 +207,74 @@ input:focus{
    content: "";
    display: block;
    position: absolute;
+
    width: 3px;
    height: 80px;
+
    background: #fff;
+
    right: 0;
    top: -8px;
 }
 
 
 /* ------------ layout ---------  */
+.context-box{
+   display: flex;
+   justify-content: space-between;
+}
+
+.col_left{
+   flex: 0 0 630px;
+}
+.col_rigth{
+   flex: 0 0 300px;
+}
 
 
+/* ------------ post ---------  */
 
-/* ------------ col left ---------  */
+.post{
+   background: #ededed;
+   border: 2px solid #fff;
 
+   margin-bottom: 30px;
+
+   display: flex;
+
+   padding: 25px 25px 25px 0;
+
+   position: relative;
+}
+
+.post__left{
+   flex-basis: 250px;
+   padding:  0 30px;
+   order: -1;
+}
+
+.post__rigth{
+   flex-basis: 350px;
+   
+}
+
+.post__number{
+   display: block;
+   position: absolute;
+
+   top: 5px;
+   right: 5px; 
+
+   width: 43px;
+   height: 38px;
+
+   background: url("../i/sprite.png") no-repeat 0 -208px;
+
+   font-size: 22px;
+   font-weight: 500;
+   text-align: center;
+   line-height: 32px;
+}
 
 
 
