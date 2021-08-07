@@ -465,8 +465,52 @@ input:focus{
 /* ------------ footer ---------  */
 
 .footer-box {
-  
+  padding: 1rem;
+  background: var(--main-bg);
+  border-top: 2px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 
 }
 
+.social{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
 
+}
+
+.social__item{
+   margin-right: 1rem;
+}
+.social__item:last-of-type{
+  margin-right: 0;
+}
+
+.social__link {
+   display: block;
+   width: 32px;
+   height: 32px;
+   background: url("../i/social.jpg") no-repeat;
+   text-indent: 9999px;
+}
+
+.social__link_g:hover{
+   background-position: 0 -32px;
+}
+.social__link_fb{
+   background-position: -32px 0px;
+}
+.social__link_fb:hover{
+   background-position: -32px -32px;
+}
+
+.social__link_tw{
+   background-position: -64px 0;
+}
+
+.social__link_tw:hover{
+   background-position: -64px -32px;
+}
